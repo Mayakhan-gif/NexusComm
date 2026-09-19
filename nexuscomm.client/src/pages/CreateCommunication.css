@@ -1,0 +1,155 @@
+.back-link {
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  font-size: 13.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.back-link:hover {
+  color: var(--color-primary);
+}
+
+.form-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 620px;
+  box-shadow: var(--shadow-sm);
+}
+
+.channel-selector {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.channel-option {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 18px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.15s;
+}
+
+.channel-option:hover {
+  border-color: var(--color-primary);
+}
+
+.channel-option.active {
+  border-color: var(--color-email);
+  background: var(--color-primary-light);
+  color: var(--color-email);
+}
+
+.channel-option.whatsapp.active {
+  border-color: var(--color-whatsapp);
+  background: #E7F9EF;
+  color: #128C4A;
+}
+
+.form-alert {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  margin-bottom: 18px;
+}
+
+.form-alert.error {
+  background: var(--color-danger-light);
+  color: var(--color-danger);
+}
+
+.form-alert.success {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s;
+  color: var(--color-text);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.send-mode-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.mode-option {
+  flex: 1;
+  padding: 11px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.mode-option.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.btn-block {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  margin-top: 8px;
+}

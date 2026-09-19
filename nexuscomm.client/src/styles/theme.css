@@ -1,0 +1,76 @@
+:root {
+  /* ---- Brand Colors ---- */
+  --color-primary: #4F46E5;       /* Indigo - primary actions, links */
+  --color-primary-dark: #4338CA;
+  --color-primary-light: #EEF2FF;
+
+  --color-success: #16A34A;       /* Sent / green */
+  --color-success-light: #DCFCE7;
+
+  --color-warning: #D97706;       /* Retrying / amber */
+  --color-warning-light: #FEF3C7;
+
+  --color-danger: #DC2626;        /* Failed / red */
+  --color-danger-light: #FEE2E2;
+
+  --color-info: #0891B2;          /* Scheduled / cyan */
+  --color-info-light: #CFFAFE;
+
+  --color-muted: #6B7280;         /* Cancelled / gray */
+  --color-muted-light: #F3F4F6;
+
+  /* ---- Neutrals ---- */
+  --color-bg: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-text: #111827;
+  --color-text-secondary: #6B7280;
+
+  /* ---- Channel Colors ---- */
+  --color-whatsapp: #25D366;
+  --color-email: #4F46E5;
+
+  /* ---- Spacing & Radius ---- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 10px;
+}

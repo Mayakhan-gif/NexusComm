@@ -1,0 +1,14 @@
+# Node.js / React
+**/node_modules/
+**/dist/
+**/build/
+*.log
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Editor settings
+.vscode/
+.idea/

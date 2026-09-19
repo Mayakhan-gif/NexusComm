@@ -1,0 +1,133 @@
+.details-header {
+  margin-bottom: 20px;
+}
+
+.details-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.details-title h1 {
+  font-size: 22px;
+}
+
+.failure-banner {
+  background: var(--color-danger-light);
+  color: var(--color-danger);
+  padding: 13px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.details-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.details-card h3 {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.field-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13.5px;
+}
+
+.field-label {
+  color: var(--color-text-secondary);
+}
+
+.field-value {
+  font-weight: 500;
+  text-align: right;
+}
+
+.message-body-preview {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text);
+  white-space: pre-wrap;
+}
+
+.attempt-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.attempt-item {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.attempt-item:last-child {
+  border-bottom: none;
+}
+
+.attempt-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 18px;
+}
+
+.attempt-item.success .attempt-icon {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.attempt-item.failed .attempt-icon {
+  background: var(--color-danger-light);
+  color: var(--color-danger);
+}
+
+.attempt-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.attempt-time {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.attempt-status {
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 800px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}

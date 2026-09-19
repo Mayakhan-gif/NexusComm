@@ -1,0 +1,42 @@
+.list-toolbar {
+  margin-bottom: 18px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  max-width: 340px;
+  color: var(--color-text-secondary);
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+  color: var(--color-text);
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+.btn-link-danger {
+  background: none;
+  border: none;
+  color: var(--color-danger);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-link-danger:hover {
+  text-decoration: underline;
+}
